@@ -2,7 +2,7 @@
 use strict;
 use warnings;
 
-
+use 5.010000;
 
 use ExtUtils::MakeMaker 6.30;
 
@@ -19,9 +19,23 @@ my %WriteMakefileArgs = (
   "EXE_FILES" => [],
   "LICENSE" => "perl",
   "NAME" => "WebService::FogBugz::XML",
-  "PREREQ_PM" => {},
-  "TEST_REQUIRES" => {},
-  "VERSION" => "1.0000",
+  "PREREQ_PM" => {
+    "Config::Any" => 0,
+    "Data::Dumper" => 0,
+    "HTTP::Request" => 0,
+    "IO::Prompt" => 0,
+    "LWP::UserAgent" => 0,
+    "Moose" => 0,
+    "XML::LibXML" => 0,
+    "common::sense" => 0,
+    "namespace::autoclean" => 0
+  },
+  "TEST_REQUIRES" => {
+    "Term::ReadKey" => 0,
+    "Test::More" => 0,
+    "lib" => 0
+  },
+  "VERSION" => "1.0001",
   "test" => {
     "TESTS" => "t/*.t"
   }
