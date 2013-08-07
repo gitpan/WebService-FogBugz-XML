@@ -1,0 +1,12 @@
+Changes
+LICENSE
+MANIFEST
+META.yml
+Makefile.PL
+README
+dist.ini
+lib/WebService/FogBugz/XML.pm
+lib/WebService/FogBugz/XML/Case.pm
+lib/WebService/FogBugz/XML/Event.pm
+t/01_reach_fogbugz.t
+t/02_view_fb_case.t
