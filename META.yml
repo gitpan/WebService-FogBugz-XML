@@ -3,7 +3,6 @@ abstract: 'API to Fogbugz XML webservice'
 author:
   - 'Gareth Kirwan <gbjk@thermeon.com>'
 build_requires:
-  Term::ReadKey: 0
   Test::More: 0
   lib: 0
 configure_requires:
@@ -28,4 +27,4 @@ requires:
   perl: v5.10.0
 resources:
   repository: git://github.com/gbjk/webservice-fogbugz-xml.git
-version: 1.0001
+version: 1.0002
